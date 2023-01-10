@@ -16,14 +16,44 @@
 
     <main class="row">
 
-        <head class="col-12 ">
-            <h1>Cash Register Manager</h1>
-            <p>Enter the bill amount and cash given by the customer and know minimum number of notes to return.</p>
-        </head>
+        <div class="mx-auto col-12 mt-4">
 
-        <section class="billAmount">
+            <head>
+                <h1 class="text-center">Cash Register Manager</h1>
+                <p class="text-center mt-3">Enter the bill amount and cash given by the customer and know minimum number
+                    of notes to return.</p>
+            </head>
 
-        </section>
+            <section class="d-flex flex-column">
+                <label for="billAmount">Bill Amount :</label>
+                <input type="text" placeholder="Enter your amount" id="billAmount">
+                <label for="cashGiven">Cash Given :</label>
+                <input type="text" placeholder="Enter your amount" id="billAmount">
+                <button class="btn btn-success">Check</button>
+                <label for="table">Return Change :</label>
+                <table id="table">
+                    <tr>
+                        <th>No. of Notes</th>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <th class="NoOfnotes">Notes</th>
+                        <td class="NoOfnotes">2000</td>
+                        <td class="NoOfnotes">500</td>
+                        <td class="NoOfnotes">200</td>
+                        <td class="NoOfnotes">100</td>
+                        <td class="NoOfnotes">50</td>
+                        <td class="NoOfnotes">20</td>
+                        <td class="NoOfnotes">10</td>
+                        <td class="NoOfnotes">5</td>
+                        <td class="NoOfnotes">2</td>
+                        <td class="NoOfnotes">1</td>
+                    </tr>
+                </table>
+            </section>
+
+        </div>
+
     </main>
 
 
