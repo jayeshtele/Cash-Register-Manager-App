@@ -4,8 +4,15 @@ const check = document.querySelector(".btn-success");
 
 check.addEventListener("click", () => {
 
-    if (!billAmount.value == "" && !isNaN(billAmount.value) && billAmount.value > 0) {
+    const bill = billAmount.value;
+    const cash = cashGiven.value;
 
+    if (!bill == "" && !isNaN(bill) && bill > 0) {
+        if (cash >= bill) {
+            console.log("Yes")
+        }else{
+            console.log("No")
+        }
     } else {
         alert("Enter the amount in proper positive number")
     }
