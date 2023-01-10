@@ -19,3 +19,10 @@ tr th,td{
 td{
     text-align: center;
 }
+th{
+    background: rgb(130, 239, 130);
+}
+.row{
+    display: flex;
+    align-items: center;
+}
