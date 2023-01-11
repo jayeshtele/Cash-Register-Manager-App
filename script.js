@@ -8,10 +8,10 @@ check.addEventListener("click", () => {
     const cash = cashGiven.value;
 
     if (!bill == "" && !isNaN(bill) && bill > 0) {
-        if (cash >= bill) {
-            console.log("Yes")
+        if (parseInt(cash) >= parseInt(bill)) {
+
         }else{
-            console.log("No")
+            alert("Cash given should be greater than bill amount")
         }
     } else {
         alert("Enter the amount in proper positive number")
