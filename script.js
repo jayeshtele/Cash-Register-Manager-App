@@ -4,8 +4,8 @@ const check = document.querySelector(".btn-success");
 const noOfNotes = document.querySelectorAll(".NoOfnotes")
 const notes = [2000, 500, 200, 100, 50, 20, 10, 5, 2, 1]
 
-check.addEventListener("click", () => {
-
+check.addEventListener("click", (e) => {
+    
     noOfNotes.innerText = ""
 
     const bill = billAmount.value;
@@ -24,10 +24,7 @@ check.addEventListener("click", () => {
                 }
             }
 
-            calculateAmount(amountReturn)
-
-            billAmount.value = ""
-            cashGiven.value = ""
+            calculateAmount(amountReturn);
 
         } else {
             alert("Do you want to wash plates? As your cash given is less than bill amount")
